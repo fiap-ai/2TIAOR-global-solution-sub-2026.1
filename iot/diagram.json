@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "author": "Gabriel Mule (RM 560586)",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": -105.3,
+      "left": 157.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "soil",
+      "top": 56.3,
+      "left": 163,
+      "attrs": {
+        "label": "Soil Moisture"
+      }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr",
+      "top": 185.6,
+      "left": -325.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd",
+      "top": 304,
+      "left": -13.6,
+      "attrs": {
+        "pins": "i2c"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": -147.6,
+      "left": -111.4,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yellow",
+      "top": -150,
+      "left": -80,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -150,
+      "left": -40,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_green",
+      "top": -34.45,
+      "left": -144,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_yellow",
+      "top": -34.45,
+      "left": -86.4,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": -34.45,
+      "left": -38.4,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "dht:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "dht:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "dht:SDA",
+      "esp:D15",
+      "green",
+      [
+        "h-47.9",
+        "v129.9"
+      ]
+    ],
+    [
+      "soil:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v19.2",
+        "h-96.8",
+        "v14.5"
+      ]
+    ],
+    [
+      "soil:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "soil:SIG",
+      "esp:D34",
+      "yellow",
+      []
+    ],
+    [
+      "ldr:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h57.6",
+        "v19.2",
+        "h197.3"
+      ]
+    ],
+    [
+      "ldr:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "ldr:AO",
+      "esp:D35",
+      "yellow",
+      [
+        "h144",
+        "v-168.2"
+      ]
+    ],
+    [
+      "lcd:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h-19.2",
+        "v-105.5",
+        "h144",
+        "v-81.5"
+      ]
+    ],
+    [
+      "lcd:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "lcd:SDA",
+      "esp:D21",
+      "blue",
+      [
+        "h-28.8",
+        "v-292.1"
+      ]
+    ],
+    [
+      "lcd:SCL",
+      "esp:D22",
+      "blue",
+      [
+        "h-38.4",
+        "v-330.5"
+      ]
+    ],
+    [
+      "esp:D25",
+      "r_green:1",
+      "green",
+      []
+    ],
+    [
+      "r_green:2",
+      "led_green:A",
+      "green",
+      []
+    ],
+    [
+      "led_green:C",
+      "esp:GND.3",
+      "black",
+      []
+    ],
+    [
+      "esp:D26",
+      "r_yellow:1",
+      "yellow",
+      []
+    ],
+    [
+      "r_yellow:2",
+      "led_yellow:A",
+      "yellow",
+      []
+    ],
+    [
+      "led_yellow:C",
+      "esp:GND.3",
+      "black",
+      []
+    ],
+    [
+      "esp:D27",
+      "r_red:1",
+      "red",
+      []
+    ],
+    [
+      "r_red:2",
+      "led_red:A",
+      "red",
+      []
+    ],
+    [
+      "led_red:C",
+      "esp:GND.3",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

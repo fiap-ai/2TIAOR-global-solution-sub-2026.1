@@ -1,0 +1,19 @@
+meta {
+  name: Sensors - List Readings
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/api/sensors/readings?limit=50
+  body: none
+  auth: none
+}
+
+params:query {
+  limit: 50
+}
+
+docs {
+  IoT timeline. Returns the most recent stored readings (newest last).
+}

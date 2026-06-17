@@ -1,0 +1,27 @@
+meta {
+  name: Predict - Healthy
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/predict
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "air_temperature": 24.0,
+    "air_humidity": 65.0,
+    "soil_moisture": 42.0,
+    "solar_radiation": 480.0,
+    "ndvi": 0.78,
+    "days_since_rain": 2.0,
+    "wind_speed": 8.0
+  }
+}
+
+docs {
+  Tabular ML. Mild, moist, high-NDVI parcel — should return HEALTHY.
+}

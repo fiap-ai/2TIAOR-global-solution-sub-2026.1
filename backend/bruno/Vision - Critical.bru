@@ -1,0 +1,21 @@
+meta {
+  name: Vision - Critical
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/api/vision/analyze
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(../../vision/samples/critical_scene.png)
+}
+
+docs {
+  Computer vision. Upload an RGB scene; returns vegetation/dryness/smoke
+  fractions and the derived risk class. critical_scene.png should return CRITICAL.
+  Pass ?run_yolo=true to also run optional object detection.
+}

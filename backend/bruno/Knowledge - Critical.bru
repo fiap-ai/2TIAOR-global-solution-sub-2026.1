@@ -1,0 +1,20 @@
+meta {
+  name: Knowledge - Critical
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{baseUrl}}/api/knowledge?risk_label=CRITICAL
+  body: none
+  auth: none
+}
+
+params:query {
+  risk_label: CRITICAL
+}
+
+docs {
+  Returns the mitigation actions for a single risk level. Try HEALTHY,
+  ATTENTION or CRITICAL.
+}

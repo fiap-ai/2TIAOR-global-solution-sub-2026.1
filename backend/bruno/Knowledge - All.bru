@@ -1,0 +1,16 @@
+meta {
+  name: Knowledge - All
+  type: http
+  seq: 12
+}
+
+get {
+  url: {{baseUrl}}/api/knowledge
+  body: none
+  auth: none
+}
+
+docs {
+  Returns the curated mitigation actions for every risk level
+  (HEALTHY, ATTENTION, CRITICAL).
+}

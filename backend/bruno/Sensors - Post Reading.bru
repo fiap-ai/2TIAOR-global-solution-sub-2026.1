@@ -1,0 +1,29 @@
+meta {
+  name: Sensors - Post Reading
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/api/sensors/readings
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "air_temperature": 40.0,
+    "air_humidity": 15.0,
+    "soil_moisture": 6.0,
+    "solar_radiation": 980.0,
+    "ndvi": 0.15,
+    "days_since_rain": 35.0,
+    "wind_speed": 40.0,
+    "device_id": "esp32-terravista-01"
+  }
+}
+
+docs {
+  IoT ingest. Stores an ESP32 reading enriched with the model's risk verdict.
+  This dry/hot reading should be scored CRITICAL.
+}

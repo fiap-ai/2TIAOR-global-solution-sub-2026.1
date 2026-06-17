@@ -1,0 +1,20 @@
+meta {
+  name: Vision - Healthy
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/api/vision/analyze
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(../../vision/samples/healthy_scene.png)
+}
+
+docs {
+  Computer vision. healthy_scene.png (dense green canopy) should return HEALTHY
+  with a high vegetation fraction.
+}

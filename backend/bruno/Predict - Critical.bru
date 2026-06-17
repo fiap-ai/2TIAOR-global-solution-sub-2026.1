@@ -1,0 +1,28 @@
+meta {
+  name: Predict - Critical
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/predict
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "air_temperature": 39.0,
+    "air_humidity": 18.0,
+    "soil_moisture": 8.0,
+    "solar_radiation": 950.0,
+    "ndvi": 0.18,
+    "days_since_rain": 30.0,
+    "wind_speed": 35.0
+  }
+}
+
+docs {
+  Tabular ML. Classifies a parcel's territorial risk (HEALTHY/ATTENTION/CRITICAL).
+  The example payload (hot, dry, low NDVI) should return CRITICAL.
+}

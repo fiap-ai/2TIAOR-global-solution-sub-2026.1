@@ -1,0 +1,23 @@
+meta {
+  name: Chat
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/api/chat
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "message": "What is the single most urgent action for a CRITICAL parcel?",
+    "context": "latest sensor verdict CRITICAL"
+  }
+}
+
+docs {
+  Generative AI assistant. Uses OpenRouter when a key is configured (source:
+  "openrouter"); otherwise returns a deterministic offline answer (source: "mock").
+}

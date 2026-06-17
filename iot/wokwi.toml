@@ -1,0 +1,13 @@
+# Wokwi VSCode extension config — TerraVista ESP32 (MicroPython)
+#
+# `firmware` is the MicroPython interpreter image; the extension flashes it and
+# runs the project's `main.py` (and `lcd1602.py`) from this folder.
+# Start with: Cmd/Ctrl+Shift+P -> "Wokwi: Start Simulator".
+#
+# NOTE: do NOT set `elf` to the .bin — for MicroPython there is no ELF and
+# pointing `elf` at the raw .bin makes some extension versions fail silently
+# (black canvas / no boot). Leaving only `firmware` is the correct setup.
+
+[wokwi]
+version = 1
+firmware = 'esp32-micropython.bin'

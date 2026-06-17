@@ -1,0 +1,16 @@
+meta {
+  name: Sensors - Latest
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{baseUrl}}/api/sensors/latest
+  body: none
+  auth: none
+}
+
+docs {
+  IoT. Returns the most recent reading with its risk verdict, or 404 if none
+  have been posted yet. Run "Sensors - Post Reading" first.
+}
