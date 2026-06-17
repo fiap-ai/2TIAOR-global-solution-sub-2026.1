@@ -23,9 +23,9 @@
 
 <!-- Live deploys — Web/API/IoT are live; APK badge stays "soon" until the EAS build exists (see docs/deploy.md) -->
 <p align="center">
-  <a href="https://2-tiaor-global-solution-sub-2026-1.vercel.app"><img src="https://img.shields.io/badge/Web_(Vercel)-live-brightgreen?logo=vercel&logoColor=white" alt="Web deploy"></a>
-  <a href="https://twotiaor-global-solution-sub-2026-1.onrender.com/docs"><img src="https://img.shields.io/badge/API_(Swagger)-live-brightgreen?logo=swagger&logoColor=white" alt="API deploy"></a>
-  <a href="https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0"><img src="https://img.shields.io/badge/APK_(EAS_Build)-live-brightgreen?logo=android&logoColor=white" alt="APK build"></a>
+  <a href="https://2-tiaor-global-solution-sub-2026-1.vercel.app"><img src="https://img.shields.io/badge/Web_%28Vercel%29-live-brightgreen?logo=vercel&logoColor=white" alt="Web deploy"></a>
+  <a href="https://twotiaor-global-solution-sub-2026-1.onrender.com/docs"><img src="https://img.shields.io/badge/API_%28Swagger%29-live-brightgreen?logo=openapiinitiative&logoColor=white" alt="API deploy"></a>
+  <a href="https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0"><img src="https://img.shields.io/badge/APK_%28EAS_Build%29-live-brightgreen?logo=android&logoColor=white" alt="APK build"></a>
   <a href="https://wokwi.com/projects/466934430632875009"><img src="https://img.shields.io/badge/IoT-Wokwi-FF6A00?logo=arduino&logoColor=white" alt="IoT on Wokwi"></a>
 </p>
 
