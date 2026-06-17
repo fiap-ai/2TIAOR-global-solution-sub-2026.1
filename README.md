@@ -67,7 +67,7 @@ inteligência acionável em terra.
 | 📱 **APK Android (EAS Build)**       | <https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0> |
 | 📡 **IoT (Wokwi · ESP32)**           | <https://wokwi.com/projects/466934430632875009>                 |
 | 📦 **Repositório (GitHub)**          | <https://github.com/fiap-ai/2TIAOR-global-solution-sub-2026.1>  |
-| 🎥 **Vídeo demonstrativo (YouTube)** | *(adicionar antes da entrega)*                                  |
+| 🎥 **Vídeo demonstrativo (YouTube)** | <https://youtu.be/sy-_nimLjFo>                                  |
 
 > **Credenciais de demonstração:** `admin` / `terravista`.
 > A API roda no plano Free do Render — a **primeira** requisição pode levar ~50s

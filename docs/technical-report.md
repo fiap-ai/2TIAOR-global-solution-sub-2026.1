@@ -4,18 +4,23 @@
 
 **Autor:** Gabriel Mule — **RM 560586**
 
-> Este documento é a fonte do PDF único de entrega. Exporte-o de dentro da pasta
-> `docs/` (para que os caminhos relativos das imagens resolvam):
->
-> ```bash
-> cd docs && pandoc technical-report.md --pdf-engine=xelatex -V lang=pt-BR \
->   -V geometry:margin=2.5cm -V mainfont="Arial Unicode MS" -V monofont="Menlo" \
->   -o terravista-technical-report.pdf
-> ```
->
-> Todos os trechos de código estão em texto (sem prints), conforme as regras da
-> GS. Adicione o link do vídeo (YouTube não listado) e o link do repositório na
-> §5 antes da exportação final.
+- **Repositório:** <https://github.com/fiap-ai/2TIAOR-global-solution-sub-2026.1>
+- **Aplicação web (Vercel):** <https://2-tiaor-global-solution-sub-2026-1.vercel.app>
+- **API (Swagger):** <https://twotiaor-global-solution-sub-2026-1.onrender.com/docs>
+- **APK Android (EAS Build):** <https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0>
+- **Vídeo demonstrativo (YouTube não listado):** <https://youtu.be/sy-_nimLjFo>
+- **Simulação IoT ao vivo:** <https://wokwi.com/projects/466934430632875009>
+
+<!--
+Este documento é a fonte do PDF único de entrega. Exporte-o de dentro da pasta
+`docs/` (para que os caminhos relativos das imagens resolvam):
+
+    cd docs && pandoc technical-report.md --pdf-engine=xelatex -V lang=pt-BR \
+      -V geometry:margin=2.5cm -V mainfont="Arial Unicode MS" -V monofont="Menlo" \
+      -o terravista-technical-report.pdf
+
+Todos os trechos de código estão em texto (sem prints), conforme as regras da GS.
+-->
 
 ---
 
@@ -236,19 +241,19 @@ Ambos os clientes compartilham uma camada de API tipada e enxuta e a mesma
 linguagem de cores de risco. As capturas abaixo são do app mobile rodando contra
 o mesmo backend.
 
-![Mobile Dashboard](assets/07-mobile-dashboard.png)
+![Mobile Dashboard](assets/07-mobile-dashboard.png){ width=25% }.  
 *Mobile — Dashboard com KPIs (34,9 °C / 14% / NDVI 0,27) e timeline de telemetria
 (`react-native-chart-kit`).*
 
-![Mobile Predict](assets/08-mobile-predict.png)
+![Mobile Predict](assets/08-mobile-predict.png){ width=25% }.  
 *Mobile — Predict com veredito CRITICAL (94,9%) a partir das 7 features da
 parcela.*
 
-![Mobile Vision](assets/09-mobile-vision.png)
+![Mobile Vision](assets/09-mobile-vision.png){ width=25% }.  
 *Mobile — Vision classificando uma cena enviada como ATTENTION (62%) via índice
 ExG.*
 
-![Mobile Chat](assets/10-mobile-chat.png)
+![Mobile Chat](assets/10-mobile-chat.png){ width=25% }.  
 *Mobile — Assistente de Resiliência entregando um plano de ação para uma parcela
 CRITICAL.*
 
@@ -331,8 +336,7 @@ sistema de produção.
 - **Aplicação web (Vercel):** <https://2-tiaor-global-solution-sub-2026-1.vercel.app>
 - **API (Swagger):** <https://twotiaor-global-solution-sub-2026-1.onrender.com/docs>
 - **APK Android (EAS Build):** <https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0>
-- **Vídeo demonstrativo (YouTube não listado):** *(adicionar o link antes da
-  entrega)*
+- **Vídeo demonstrativo (YouTube não listado):** <https://youtu.be/sy-_nimLjFo>
 - **Simulação IoT ao vivo:** <https://wokwi.com/projects/466934430632875009>
 - Woebbecke, D. M. et al. (1995). *Color indices for weed identification.* — base
   para o Excess Green Index (ExG).
