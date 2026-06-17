@@ -327,7 +327,10 @@ sistema de produção.
 
 ## 5. Referências e Links
 
-- **Repositório:** *(adicionar o link público do repositório antes da entrega)*
+- **Repositório:** <https://github.com/fiap-ai/2TIAOR-global-solution-sub-2026.1>
+- **Aplicação web (Vercel):** <https://2-tiaor-global-solution-sub-2026-1.vercel.app>
+- **API (Swagger):** <https://twotiaor-global-solution-sub-2026-1.onrender.com/docs>
+- **APK Android (EAS Build):** <https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0>
 - **Vídeo demonstrativo (YouTube não listado):** *(adicionar o link antes da
   entrega)*
 - **Simulação IoT ao vivo:** <https://wokwi.com/projects/466934430632875009>

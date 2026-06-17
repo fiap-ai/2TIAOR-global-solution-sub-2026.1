@@ -37,7 +37,7 @@ WIFI_PASSWORD = ""
 # Backend endpoint. The Wokwi sandbox cannot reach your localhost directly:
 #   - expose it with a tunnel:  `ngrok http 8000`  -> use the https URL, or
 #   - point to your deployed backend (Phase 8).
-API_URL = "https://YOUR-BACKEND-HOST/api/sensors/readings"
+API_URL = "https://twotiaor-global-solution-sub-2026-1.onrender.com/api/sensors/readings"
 DEVICE_ID = "esp32-terravista-01"
 
 SEND_INTERVAL_S = 10  # seconds between readings

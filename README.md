@@ -21,11 +21,11 @@
   <img src="https://img.shields.io/badge/License-CC_BY_4.0-blue" alt="License CC BY 4.0">
 </p>
 
-<!-- Live deploys — Wokwi is live; replace the `#` URLs once each deploy exists (see docs/deploy.md) -->
+<!-- Live deploys — Web/API/IoT are live; APK badge stays "soon" until the EAS build exists (see docs/deploy.md) -->
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Web_(Vercel)-soon-lightgrey?logo=vercel&logoColor=white" alt="Web deploy (soon)"></a><!-- TODO: Vercel URL -->
-  <a href="#"><img src="https://img.shields.io/badge/API_(Swagger)-soon-lightgrey?logo=swagger&logoColor=white" alt="API deploy (soon)"></a><!-- TODO: backend /docs URL -->
-  <a href="#"><img src="https://img.shields.io/badge/APK_(EAS_Build)-soon-lightgrey?logo=android&logoColor=white" alt="APK build (soon)"></a><!-- TODO: EAS build URL -->
+  <a href="https://2-tiaor-global-solution-sub-2026-1.vercel.app"><img src="https://img.shields.io/badge/Web_(Vercel)-live-brightgreen?logo=vercel&logoColor=white" alt="Web deploy"></a>
+  <a href="https://twotiaor-global-solution-sub-2026-1.onrender.com/docs"><img src="https://img.shields.io/badge/API_(Swagger)-live-brightgreen?logo=swagger&logoColor=white" alt="API deploy"></a>
+  <a href="https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0"><img src="https://img.shields.io/badge/APK_(EAS_Build)-live-brightgreen?logo=android&logoColor=white" alt="APK build"></a>
   <a href="https://wokwi.com/projects/466934430632875009"><img src="https://img.shields.io/badge/IoT-Wokwi-FF6A00?logo=arduino&logoColor=white" alt="IoT on Wokwi"></a>
 </p>
 
@@ -55,6 +55,25 @@ que funde **dados orbitais (índices de vegetação / NDVI)** com **estações d
 A economia espacial entra como o **vetor de dados**: sensoriamento remoto orbital
 é a fonte primária que, combinada com sensores de borda e modelos de IA, vira
 inteligência acionável em terra.
+
+---
+
+## 🔗 Links da entrega
+
+| O quê                               | Link                                                            |
+| ----------------------------------- | --------------------------------------------------------------- |
+| 💻 **Web (Vercel)**                  | <https://2-tiaor-global-solution-sub-2026-1.vercel.app>         |
+| ⚙️ **API / Swagger (Render)**        | <https://twotiaor-global-solution-sub-2026-1.onrender.com/docs> |
+| 📱 **APK Android (EAS Build)**       | <https://expo.dev/accounts/gabemule/projects/terravista/builds/3ab21b76-ba40-4a2b-8c3a-02771dd9fff0> |
+| 📡 **IoT (Wokwi · ESP32)**           | <https://wokwi.com/projects/466934430632875009>                 |
+| 📦 **Repositório (GitHub)**          | <https://github.com/fiap-ai/2TIAOR-global-solution-sub-2026.1>  |
+| 🎥 **Vídeo demonstrativo (YouTube)** | *(adicionar antes da entrega)*                                  |
+
+> **Credenciais de demonstração:** `admin` / `terravista`.
+> A API roda no plano Free do Render — a **primeira** requisição pode levar ~50s
+> (cold start); depois fica ágil.
+
+---
 
 ### ✅ Requisitos mínimos da GS atendidos
 

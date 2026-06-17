@@ -11,6 +11,9 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "API_URL": "https://twotiaor-global-solution-sub-2026-1.onrender.com/api"
       }
     },
     "production": {
